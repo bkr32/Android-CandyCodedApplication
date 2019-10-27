@@ -74,11 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        // starting InfoActivity
-        Intent infoIntent = new Intent(MainActivity.this,InfoActivity.class);
+    @Override public boolean onOptionsItemSelected(MenuItem item) {
+        Intent infoIntent = new Intent(this, InfoActivity.class);
         startActivity(infoIntent);
 
         return super.onOptionsItemSelected(item);
